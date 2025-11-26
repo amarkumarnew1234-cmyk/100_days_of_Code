@@ -31,8 +31,8 @@ int main(){
         scanf("%d",&arr1[i]);
     }
     int merged[count + count1];
-    for(int i=0;i<count1;i++){
-        merged[i]=arr1[i];
+    for(int i=0;i<count;i++){
+        merged[i]=arr[i];
     }
     for(int i=0;i<count1;i++){
         merged[count+i]=arr1[i];
@@ -43,3 +43,4 @@ int main(){
     return 0;
 
 }
+
