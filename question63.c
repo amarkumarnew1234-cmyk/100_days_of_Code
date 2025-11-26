@@ -30,12 +30,16 @@ int main(){
     for(int i=0;i<count1;i++){
         scanf("%d",&arr1[i]);
     }
-    arr[count+count1];
+    int merged[count + count1];
     for(int i=0;i<count1;i++){
-        arr[count+i]=arr1[i];
+        merged[i]=arr1[i];
     }
-    for(int i=0;i<count1+count;i++){
-        printf("%d ",arr[i]);
+    for(int i=0;i<count1;i++){
+        merged[count+i]=arr1[i];
+    }
+    for(int i=0;i<count+count1;i++){
+        printf("%d ",merged[i]);
     }
     return 0;
+
 }
